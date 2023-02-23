@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LinearLayout</string>
+    <string name="dame_tu_primer_numero">Dame tu primer numero</string>
+    <string name="dame_un_segundo">Dame un segundo</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">multiplicacion</string>
+    <string name="division">division</string>
+</resources>
