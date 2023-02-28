@@ -1,83 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
-    android:gravity="center"
-    >
-
-    <TextView
-        android:text="@string/dame_tu_primer_numero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-
-    <EditText
-        android:id="@+id/etNumeroPrimero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dame_un_segundo"
-        />
-
-    <EditText
-        android:id="@+id/etSegdoNumero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:gravity="center"
+        >
 
-        <Button
-            android:text="@string/suma"
+        <TextView
+            android:text="@string/dame_tu_primer_numero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bnSuma"
-            android:layout_margin="6dp">
-
-        </Button>
+            />
 
 
-        <Button
-            android:id="@+id/bnResta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/resta"
-            android:layout_margin="6dp">
-
-        </Button>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_horizontal">
-
-    <Button
-        android:id="@+id/bnMultiplicacion"
-        android:layout_margin="6dp"
-        android:text="@string/multiplicacion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/bnDivision"
-            android:text="@string/division"
-            android:layout_margin="6dp"
+        <EditText
+            android:id="@+id/etNumeroPrimero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dame_un_segundo"
+            />
+
+        <EditText
+            android:id="@+id/etSegdoNumero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:text="@string/suma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bnSuma"
+                android:layout_margin="6dp"
+                >
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/bnResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resta"
+                android:layout_margin="6dp">
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/bnMultiplicacion"
+                android:layout_margin="6dp"
+                android:text="@string/multiplicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/bnDivision"
+                android:text="@string/division"
+                android:layout_margin="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
-
-</LinearLayout>
+</androidx.core.widget.NestedScrollView>
